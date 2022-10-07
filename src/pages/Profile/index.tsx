@@ -1,4 +1,5 @@
 import React from 'react'
+import ProfileData from '../../components/ProfileData'
 import {Container, Main, LeftSide, RightSide} from './styles'
 
 

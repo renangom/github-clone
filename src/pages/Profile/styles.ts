@@ -1,12 +1,28 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    
-`;
-export const Main = styled.main``;
-export const LeftSide = styled.div`
+    --horizontalPadding: 16px;
+    --verticalPadding:24px;
 
+    padding: var(--verticalPadding) var(--horizontalPadding);
+`;
+export const Main = styled.main`
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1280px;
+
+    @media (max-width:768px){
+        flex-direction: row;
+    }
+`;
+export const LeftSide = styled.div`
+    @media (min-width: 768px){
+        width: 25%;
+    }
 `;
 export const RightSide  = styled.div`
-
+    @media (min-width: 768px){
+        width: 75%;
+    }
 `;

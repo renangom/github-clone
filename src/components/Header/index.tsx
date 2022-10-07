@@ -1,7 +1,15 @@
 import React from 'react'
+import {Container, GithubLogo, SearchForm} from './styles'
+
 
 export default function Header() {
   return (
-    <div>Header</div>
+    <Container>
+      <GithubLogo />
+      <SearchForm>
+        <input placeholder='Enter Username or Repo...' />
+      </SearchForm>
+    </Container>
+
   )
 }

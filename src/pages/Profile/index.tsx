@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfileData from '../../components/ProfileData'
-import {Container, Main, LeftSide, RightSide} from './styles'
+import RepoCart from '../../components/RepoCart'
+import {Container, Main, LeftSide, RightSide, Repos} from './styles'
 
 
 export default function Profile() {
@@ -19,7 +20,25 @@ export default function Profile() {
             blog={'linkedin.com/renangom'}
           />
         </LeftSide>
-        <RightSide></RightSide>
+        <RightSide>
+          <Repos>
+            <h2> Random Repos</h2>
+            <div>
+              {[1,2,3,4,5,6].map((n) => {
+                return (
+                  <RepoCart key={n}
+                    username={'renangom'}
+                    reponame={'github-clone'}
+                    description={'Contains all of my YouTube lessons code'}
+                    language={n % 3 === 0 ? 'JavaScript' : 'TypeScript'}
+                    start={8}
+                    forks={12}
+                  />
+                )
+              })}
+            </div>
+          </Repos>
+        </RightSide>
       </Main>
     </Container>
   )

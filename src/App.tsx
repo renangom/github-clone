@@ -4,6 +4,9 @@ import Header from './components/Header'
 import GlobalStyles from './GlobalStyles'
 import Profile from './pages/Profile'
 import Repo from './pages/Repo'
+import 'react-calendar-heatmap/dist/styles.css'
+
+
 function App() {
 
   return (

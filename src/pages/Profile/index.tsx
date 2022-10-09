@@ -31,7 +31,7 @@ export default function Profile() {
                     reponame={'github-clone'}
                     description={'Contains all of my YouTube lessons code'}
                     language={n % 3 === 0 ? 'JavaScript' : 'TypeScript'}
-                    start={8}
+                    starts={8}
                     forks={12}
                   />
                 )

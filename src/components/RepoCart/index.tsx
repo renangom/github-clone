@@ -23,7 +23,7 @@ export default function RepoCart({username, reponame, description, language, sta
                     {reponame}
                 </Link>
             </header>
-
+            <p>{description}</p>
         </Topside>
         <Bottomside>
             <ul>

@@ -2,8 +2,7 @@ import React from 'react'
 import ProfileData from '../../components/ProfileData'
 import RandomCalendar from '../../components/RandomCalendar'
 import RepoCart from '../../components/RepoCart'
-import { RepoIcon } from '../../components/RepoCart/styles'
-import {Container, Main, LeftSide, RightSide, Repos, CalendarHeading} from './styles'
+import {Container, Main, LeftSide, RightSide, Repos, CalendarHeading, Tab, RepoIcon} from './styles'
 
 
 export default function Profile() {

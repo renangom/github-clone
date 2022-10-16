@@ -2,10 +2,25 @@ import React from 'react'
 import ProfileData from '../../components/ProfileData'
 import RandomCalendar from '../../components/RandomCalendar'
 import RepoCart from '../../components/RepoCart'
+import { RepoIcon } from '../../components/RepoCart/styles'
 import {Container, Main, LeftSide, RightSide, Repos, CalendarHeading} from './styles'
 
 
 export default function Profile() {
+
+  const TabContent = () => {
+    return(
+      <div className='content'>
+        <RepoIcon /> 
+        <span className='label'>
+          Repositories
+        </span>
+        <span className="number">
+          26
+        </span>
+      </div>
+    )
+  }
   return (
     <Container>
       <Main>
@@ -22,6 +37,10 @@ export default function Profile() {
           />
         </LeftSide>
         <RightSide>
+          <Tab className='mobile'>
+            <TabContent />
+            <span className='line '></span>
+          </Tab>
           <Repos>
             <h2> Random Repos</h2>
             <div>
